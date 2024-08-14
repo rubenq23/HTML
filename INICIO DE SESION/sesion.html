@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="infoplayer">
+            <img src="logo.png"/>
+            <h1>BlackPhoenix</h1>
+            <h2>150</h2>    
+        </div>
+        <div>
+            <dialog id="mensajes">
+            <p>Mensajes</p>
+            <nav>
+                <dialog id="directos">
+                    <h1>Buzon</h1>
+                    <dialog id="amigo">
+                        <dialog id="mensajeprueba">
+                            <button onclick="mensajeprueba.close()">Cerrar</button>
+                        </dialog>
+                        <button onclick="mensajeprueba()">Este es un mensaje de prueba de mi amigo.</button>
+                        <button onclick="amigo.close()">Cerrar</button>
+                    </dialog>
+                        <button onclick="amigo.showModal()">Chronos8899</button>
+                    <button onclick="directos.close()">Cerrar</button>
+                </dialog>
+                <button onclick="directos.showModal()">Mensajes directos</button>
+                <dialog id="gremio">
+                    <h1>CovenSages</h1>
+                    <dialog id="miembro1">
+                        <nav>
+                            <dialog id="mensaje1">
+                                <button onclick="mensaje1.close()">Cerrar</button>
+                            </dialog>
+                            <p>Este es un mensaje de prueba del miembro del gremio ReuxQ</p>   
+                        </nav>
+                        <button onclick="miembro1.close()">Cerrar</button>
+                    </dialog>
+                    <button onclick="miembro1.showModal()">ReuxQ</button>
+                    <dialog id="miembro2">
+                        <nav>
+                            <dialog id="mensaje2">
+                                <button onclick="mensaje2.close()">Cerrar</button>
+                            </dialog>
+                            <p>Este es un mensaje de prueba del miembro del gremio Loraq</p>
+                        </nav>
+                        <button onclick="miembro2.close()">Cerrar</button>
+                    </dialog>
+                    <button onclick="miembro2.showModal()">Loraq</button>
+                    <button onclick="gremio.close()">Cerrar</button>
+                </dialog>
+                <button onclick="gremio.showModal()">Gremio</button>
+            </nav>
+            <button onclick="mensajes.close()">Cerrar</button>
+            </dialog>
+            <button onclick="mensajes.showModal()">Mensajes</button>
+        </div>
+        <div>
+            <dialog id="configuracion">
+                <h1>Configuracion</h1>
+                <nav>
+                    <dialog id="general">
+                        <h1>Configuracion general</h1> 
+                        <button onclick="general.close()">Cerrar</button>   
+                    </dialog>
+                    <button onclick="general.showModal()">General</button>
+                    <dialog id="idioma">
+                        <h1>Seleccion de idiomas</h1> 
+                        <button onclick="idioma.close()">Cerrar</button>   
+                    </dialog>
+                    <button onclick="idioma.showModal()">idioma</button>
+                    <dialog id="sonido">
+                        <h1>Ajustes de sonido</h1> 
+                        <button onclick="sonido.close()">Cerrar</button>   
+                    </dialog>
+                    <button onclick="sonido.showModal()">Audio</button>
+                    <dialog id="video">
+                        <h1>Ajustes de video</h1> 
+                        <button onclick="video.close()">Cerrar</button>   
+                    </dialog>
+                    <button onclick="video.showModal()">Graficos</button>
+                </nav>
+                <button onclick="configuracion.close()">Cerrar</button>
+            </dialog>
+            <button onclick="configuracion.showModal()">Configuracion</button>
+        </div>
+    </header>
+    
+    <footer>
+        <p>Se reservan todos los derechos, 2024</p>
+    </footer>
+</body>
+</html>
+
+
+
